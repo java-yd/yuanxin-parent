@@ -1,0 +1,66 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
+<%
+	String path = request.getContextPath();
+	String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
+<script language="javascript" src="<%=basePath %>ajax/ToolTip.js"></script>
+<div class="bjui-pageHeader">
+<form id="pagerForm" method="post" action="<%=basePath %>manager/managers_getAllByPage">
+	<input type="hidden" name="pageSize" value="${requestScope.pageSize}">
+    <input type="hidden" name="pageCurrent" value="${requestScope.pageCurrent}">
+    <input type="hidden" name="pageNumShown" value="${requestScope.pageNumShown}">
+    <div class="bjui-searchBar">
+    	<div class="pull-right">
+		   <button type="button" class="btn-blue" data-url="<%=basePath %>manager/ma_addmanagers.jsp" data-toggle="dialog" data-icon="save" data-mask="true" data-width="400" data-height="300" title="添加城市管理员">添加城市管理员</button>&nbsp;
+        </div>
+    </div>
+</form>
+</div>
+<div class="bjui-pageContent tableContent">
+    <table class="table table-bordered table-hover table-striped table-top" data-selected-multi="true">
+        <thead>
+			<tr>
+				<th width="50">ID</th>
+				<th width="200">管理员账号</th>
+				<th width="200">创建日期</th>
+				<th width="200">上次登录</th>
+				<th width="200">登录IP</th>
+				<th width="200">城市名称</th>
+				<th width="120">操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${requestScope.Listdates }" var="dates">
+				<tr target="sid_m_id" rel="${dates.id }">
+					<td>${dates.id }</td>
+					<td>${dates.username }</td>
+					<td>${dates.addtime }</td>
+					<td>${dates.lastlogtime }</td>
+					<td>${dates.lastlogip }</td>
+					<td>${dates.s_name }</td>
+					<td>
+						<a href="<%=basePath %>manager/editManagersByMid?m_id=${dates.id }" class="btn btn-green" data-toggle="dialog" data-id="form" data-width="400" data-height="300" title="编辑-${dates.n_title }">编</a>
+	                    <a href="<%=basePath %>manager/delManagersByMid?m_id=${dates.id }" class="btn btn-red" data-toggle="doajax" data-confirm-msg="确定要删除'${dates.username }'信息吗？">删</a>
+				</tr>
+			</c:forEach>
+		</tbody>
+    </table>
+</div>
+<div class="bjui-pageFooter">
+    <div class="pages">
+        <span>每页&nbsp;</span>
+        <div class="selectPagesize">
+            <select data-toggle="selectpicker" data-toggle-change="changepagesize">
+                <option value="30" ${requestScope.pageNumShown==30?'selected':'' }>30</option>
+                <option value="60" ${requestScope.pageNumShown==60?'selected':'' }>60</option>
+                <option value="120" ${requestScope.pageNumShown==120?'selected':'' }>120</option>
+                <option value="150" ${requestScope.pageNumShown==150?'selected':'' }>150</option>
+            </select>
+        </div>
+        <span>&nbsp;条，共 ${requestScope.totalCount } 条</span>
+    </div>
+    <div class="pagination-box" data-toggle="pagination" data-total="${requestScope.totalCount }" data-page-size="${requestScope.pageSize }" data-page-current="${requestScope.pageCurrent }">
+    </div>
+</div>

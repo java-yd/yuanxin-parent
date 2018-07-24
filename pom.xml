@@ -1,0 +1,272 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.yuanxin</groupId>
+  <artifactId>yuanxin-parent</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  
+    
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<java.version>1.8</java.version>
+		<parent.version>1.5.8.RELEASE</parent.version>
+	</properties>
+	
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.8.RELEASE</version>
+	</parent>
+  
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-aop</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+	
+			<!-- mongodb -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-mongodb</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+			<!-- mongodb -->
+			
+			<!-- 集成redis -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-redis</artifactId>
+				<version>1.2.5.RELEASE</version>
+			</dependency>
+			<!-- 集成redis -->
+			
+			<!-- velocity模板 -->
+			<dependency>    
+	    		<groupId>org.springframework.boot</groupId>   
+	    		<artifactId>spring-boot-starter-velocity</artifactId>
+	    		<version>1.2.2.RELEASE</version>
+			</dependency>
+			<!-- velocity模板 -->
+			
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-web-services</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+	
+			<!-- 邮件 -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-mail</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+			<!-- 邮件 -->
+			
+			<!-- mybatis -->
+			<dependency>
+				<groupId>org.mybatis.spring.boot</groupId>
+				<artifactId>mybatis-spring-boot-starter</artifactId>
+				<version>1.3.1</version>
+			</dependency>
+			<dependency>
+				<groupId>tk.mybatis</groupId>
+				<artifactId>mapper-spring-boot-starter</artifactId>
+				<version>1.1.5</version>
+			</dependency>
+			<!-- mybatis -->
+			<dependency>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-starter-data-mongodb</artifactId>
+				<version>${parent.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>5.1.46</version>
+				<scope>runtime</scope>
+			</dependency>
+			
+			<!-- mybatis分页插件 -->
+			<dependency>
+			    <groupId>com.github.pagehelper</groupId>
+			    <artifactId>pagehelper-spring-boot-starter</artifactId>
+			    <version>1.2.2</version>
+			</dependency>
+			
+			
+			<!-- 腾讯云短信 -->
+			<dependency>
+				<groupId>com.github.qcloudsms</groupId>
+				<artifactId>sms</artifactId>
+				<version>0.9.2</version>
+			</dependency>
+			<!-- 腾讯云短信 -->
+			
+			<!-- 图片压缩 -->
+			<dependency>
+	   			<groupId>net.coobird</groupId>
+	   			<artifactId>thumbnailator</artifactId>
+	   			<version>0.4.8</version>
+			</dependency>
+			<!-- 图片压缩 -->
+	
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>1.3.2</version>
+			</dependency>
+			<dependency>
+				<groupId>com.auth0</groupId>
+				<artifactId>java-jwt</artifactId>
+				<version>3.3.0</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>1.16.22</version>
+				<optional>true</optional>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+			<dependency>
+				<groupId>org.apache.commons</groupId>
+				<artifactId>commons-lang3</artifactId>
+				<version>3.4</version>
+			</dependency>
+			<!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>fastjson</artifactId>
+				<version>1.2.41</version>
+			</dependency>
+	
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger2</artifactId>
+				<version>2.4.0</version>
+			</dependency>
+			<dependency>
+				<groupId>io.springfox</groupId>
+				<artifactId>springfox-swagger-ui</artifactId>
+				<version>2.4.0</version>
+			</dependency>
+			
+			<dependency>
+	            <groupId>org.springframework.boot</groupId>
+	            <artifactId>spring-boot-configuration-processor</artifactId>
+	            <optional>true</optional>
+	        </dependency>
+	
+	        <dependency>
+	            <groupId>commons-codec</groupId>
+	            <artifactId>commons-codec</artifactId>
+	        </dependency>
+	        
+	        <dependency>
+	            <groupId>commons-fileupload</groupId>
+	            <artifactId>commons-fileupload</artifactId>
+	            <version>1.3.1</version>
+	        </dependency>
+	        
+	        <dependency>
+	            <groupId>commons-io</groupId>
+	            <artifactId>commons-io</artifactId>
+	            <version>2.4</version>
+	        </dependency>
+	        
+	        <!-- <dependency>
+	            <groupId>org.json</groupId>
+	            <artifactId>json</artifactId>
+	        </dependency> -->
+	        
+	        <!-- excel poi -->
+	        <dependency>
+	    		<groupId>org.apache.poi</groupId>
+	    		<artifactId>poi</artifactId>
+	    		<version>RELEASE</version>
+			</dependency>
+			
+			<dependency>
+	    		<groupId>org.apache.poi</groupId>
+	    		<artifactId>poi-ooxml</artifactId>
+	    		<version>RELEASE</version>
+			</dependency>
+			
+			<!-- Druid数据库连接池组件 -->
+			<dependency>
+				<groupId>com.alibaba</groupId>
+				<artifactId>druid</artifactId>
+				<version>1.0.11</version>
+			</dependency>
+			
+			<!-- 百度富文本编辑器 -->
+			<dependency>
+				<groupId>com.baidu</groupId>
+				<artifactId>ueditor</artifactId>
+				<version>1.1.1</version>
+			</dependency>
+			
+			<!--jsp支持-->
+		    <!-- servlet 依赖. -->
+		    <dependency>
+		      <groupId>javax.servlet</groupId>
+		      <artifactId>javax.servlet-api</artifactId>
+		      <version>3.1.0</version>
+		      <scope>provided</scope>
+		    </dependency>
+		    <dependency>
+		      <groupId>javax.servlet</groupId>
+		      <artifactId>jstl</artifactId>
+		      <version>1.2</version>
+		    </dependency>
+		    <!-- tomcat 的支持. -->
+		    <dependency>
+		      <groupId>org.springframework.boot</groupId>
+		      <artifactId>spring-boot-starter-tomcat</artifactId>
+		      <version>${parent.version}</version>
+		    </dependency>
+		    <dependency>
+		      <groupId>org.apache.tomcat.embed</groupId>
+		      <artifactId>tomcat-embed-jasper</artifactId>
+		      <version>8.5.23</version>
+		      <scope>provided</scope>
+		    </dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	
+	<modules>
+		<module>yuanxin-cms</module>
+		<module>yuanxin-common</module>
+		<module>yuanxin-pojo</module>
+		<module>yuanxin-mapper</module>
+		<module>yuanxin-service</module>
+	</modules>
+	
+	<build>
+		<resources>
+            <resource>
+                <directory>${basedir}/src/main/resources</directory>
+                <includes>
+					<include>**/*</include>
+				</includes>
+            </resource>
+
+			<resource>
+				<directory>${basedir}/src/main/java</directory>
+				<includes>
+					<include>**/*.xml</include>
+				</includes>
+			</resource>
+		</resources>
+	</build>
+</project>

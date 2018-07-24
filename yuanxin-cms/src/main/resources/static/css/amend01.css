@@ -1,0 +1,189 @@
+@charset "utf-8";
+#bjui-header > #bjui-navbar-collapse {
+    float: right;
+    margin-top: 22px;
+}
+#bjui-hnav #bjui-hnav-navbar {
+    position: absolute;
+    left: 145px;
+    width: 80%;
+    height: 69px;
+    line-height: 69px;
+    top: -38px;
+}
+#bjui-hnav #bjui-hnav-navbar > li > a {
+    display: block;
+    padding: 0 20px;
+    height: 69px;
+    font-size: 14px;
+    line-height: 29px;
+    font-weight: normal;
+    color: #c9c9c9;
+    border: none;
+    text-decoration: none;
+    line-height: 69px;
+}
+#bjui-hnav #bjui-hnav-navbar > li {
+    background:none;
+    border:none;
+}
+#bjui-hnav #bjui-hnav-navbar > li:first-child {
+    border-radius:0!important;
+}
+#bjui-hnav #bjui-hnav-navbar > li:hover a {
+    color: #fff;
+    background:#1ca4ea;
+}
+#bjui-hnav #bjui-hnav-navbar > li.open, #bjui-hnav #bjui-hnav-navbar > li.open:hover, #bjui-hnav #bjui-hnav-navbar > li.active, #bjui-hnav #bjui-hnav-navbar > li.active:hover {
+    background-color: #23262e;
+   /*  border-color: #16669e; */
+}
+#bjui-header {
+    border:0;
+}
+#bjui-header {
+    position: relative;
+    margin-bottom: 0;
+    height: 69px!important;
+    overflow: visible;
+    border-width: 0;
+    border-radius: 0;
+}
+
+
+#bjui-header > #bjui-navbar-collapse > .bjui-navbar-right > li > a {
+    display: block;
+    padding: 0px 10px;
+    height: 28px;
+    line-height: 28px;
+    text-decoration: none;
+    color: #FFF !important;
+    border-radius: 5px;
+    margin: 0px 6px;
+}
+
+#bjui-header > #bjui-navbar-collapse > .bjui-navbar-right > li > .dropdown-menu > li > a {
+    padding: 3px 5px;
+    width: auto;
+    text-align: center;
+}
+
+#bjui-sidebar > .toggleCollapse .lock:hover {
+    color: #fff;
+    background: none;
+}
+#bjui-sidebar > .toggleCollapse .lock {
+    color: #fff;
+    background: none;
+}
+
+#bjui-sidebar > .toggleCollapse {
+    background: #34393d;
+}
+#bjui-sidebar > .toggleCollapse {
+   
+    border-radius:0;
+}
+.panel-main .panel-heading.active {
+    color: #fff;
+    background-color: #34393d;
+    border:none;
+}
+.panel-main .panel-heading:hover {
+  
+    border:none;
+       color: #fff;
+    background-color: #34393d;
+}
+.panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-radius: 0;
+  
+}
+.collapse.in {
+    display: block;
+    background: #34393d;
+    color:#fff;
+}
+
+.ztree li a.faicon {
+    color: #fff;
+}
+#bjui-sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    overflow: hidden;
+    background: #f7f7f7;
+    border:none;
+}
+.ztree li a.curSelectedNode {
+    background-color: #404549;
+    color: #fff;
+     width: 90%;
+     border:none;
+}
+
+#bjui-navtab > .tabsPageHeader {
+  
+      height: 38px;
+    line-height: 38px;
+}
+#bjui-navtab > .tabsPageHeader > .tabsPageHeaderContent {
+  
+     height: 38px;
+    line-height: 38px;
+}
+
+#bjui-navtab > .tabsPageHeader > .tabsPageHeaderContent > ul {
+    position: absolute;
+    height: 38px;
+    min-width: 100%;
+    line-height: 38px;
+}
+
+
+#bjui-navtab > .tabsPageHeader > .tabsPageHeaderContent > .nav > li > a {
+    color: #222;
+    background-color: #f3f8fc;
+    border-color: #eee;
+    border-bottom-color: #c3ced5;
+    height: 38px;
+    line-height: 38px;
+}
+
+#bjui-navtab > .tabsPageHeader > .tabsPageHeaderContent > .nav > li > a > span {
+    font-size: 14px;
+    display: block;
+    margin-top: 7px;
+}
+.panel-default > .panel-heading {
+    color: #fff;
+    background-color: #404549;
+    border-color: #404549;
+}
+.ztree li a:hover { 
+    color:#1ca4ea;
+}
+
+#bjui-navtab > .tabsPageHeader > .tabsMore {
+    top: 12px;
+    right: 0;
+    border-radius: 4px 4px 0 0;
+    padding-top: 5px;
+}
+#bjui-navtab > .tabsMoreList {  
+    top: 37px;  
+}
+.bjui-lookup {
+    top: 6px;
+}
+.btn-red{
+	color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+

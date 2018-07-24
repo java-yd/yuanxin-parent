@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/xiaocaiwo/!svn/ver/101/server/xiaocaiwo/WebRoot/manager
+END
+ma_login_firest.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/xiaocaiwo/!svn/ver/34/server/xiaocaiwo/WebRoot/manager/ma_login_firest.jsp
+END
+ma_changepassw.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/xiaocaiwo/!svn/ver/101/server/xiaocaiwo/WebRoot/manager/ma_changepassw.jsp
+END
+managerLogin.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/xiaocaiwo/!svn/ver/27/server/xiaocaiwo/WebRoot/manager/managerLogin.jsp
+END
+ma_addmanagers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/xiaocaiwo/!svn/ver/34/server/xiaocaiwo/WebRoot/manager/ma_addmanagers.jsp
+END
+ma_listManagersByPages.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/xiaocaiwo/!svn/ver/34/server/xiaocaiwo/WebRoot/manager/ma_listManagersByPages.jsp
+END
+ma_changemanagers.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/xiaocaiwo/!svn/ver/34/server/xiaocaiwo/WebRoot/manager/ma_changemanagers.jsp
+END
